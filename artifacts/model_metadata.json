@@ -1,0 +1,45 @@
+{
+  "target": "target_delta",
+  "prediction_unit": "hospital_location_specialty_quarter",
+  "feature_columns": [
+    "loc_code",
+    "spec_name",
+    "quarter_number",
+    "aasb",
+    "tobd",
+    "asb",
+    "aob",
+    "p_occ",
+    "eps",
+    "los",
+    "avlos",
+    "emergency_activity_missing",
+    "previous_p_occ",
+    "previous_asb",
+    "previous_eps"
+  ],
+  "categorical_columns": [
+    "loc_code",
+    "spec_name"
+  ],
+  "numeric_columns": [
+    "quarter_number",
+    "aasb",
+    "tobd",
+    "asb",
+    "aob",
+    "p_occ",
+    "eps",
+    "los",
+    "avlos",
+    "emergency_activity_missing",
+    "previous_p_occ",
+    "previous_asb",
+    "previous_eps"
+  ],
+  "selected_model": "Extra Trees",
+  "baseline_mae": 2.768,
+  "model_mae": 2.938,
+  "data_latest_quarter": "2025-12-31",
+  "limitations": "Model performs slightly worse than persistence baseline on aggregate quarterly data. Best used as an indicator for unusual shifts (deltas)."
+}
